@@ -11,25 +11,22 @@ export default function Header(props) {
             </form>
             {/* buttons */}
             <div className="buttons">
-                <div className="display-box">
-                    <div className="btn-title">Display:</div>
-                    <div className={`button ${displaying === 'trending' ? 'button-active' : null}`} onClick={() => { handleDisplay('trending') }}>
-                        Trending
-                    </div>
-                    <div className={`button ${displaying === 'favorites' ? 'button-active' : null}`} onClick={() => { handleDisplay('favorites') }}>
-                        Favorites
-                    </div>
+                <div className="btn-title">Display:</div>
+                <div className={`button ${displaying === 'trending' ? 'button-active' : null}`} onClick={() => { handleDisplay('trending') }}>
+                    Trending
+                </div>
+                <div className={`button ${displaying === 'favorites' ? 'button-active' : null}`} onClick={() => { handleDisplay('favorites') }}>
+                    Favorites
                 </div>
 
-                <div className="sort-box">
-                    <div className="btn-title sort-title">Sort by:</div>
-                    <div className={`button ${sortType === 'newest' ? 'button-active' : null}`} onClick={() => { handleSort('newest') }}>
-                        Newest
-                    </div>
-                    <div className={`button ${sortType === 'oldest' ? 'button-active' : null}`} onClick={() => { handleSort('oldest') }}>
-                        Oldest
-                    </div>
+                <div className="btn-title sort-title">Sort by:</div>
+                <div className={`button ${sortType === 'newest' ? 'button-active' : null}`} onClick={() => { handleSort('newest') }}>
+                    Newest
                 </div>
+                <div className={`button ${sortType === 'oldest' ? 'button-active' : null}`} onClick={() => { handleSort('oldest') }}>
+                    Oldest
+                </div>
+
             </div>
         </div>
     );
