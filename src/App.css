@@ -32,6 +32,15 @@
   justify-content: center;
   align-items: center;
 }
+.display-box {
+  display: flex;
+  align-items: center;
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+}
 
 .button {
   color: white;
@@ -102,4 +111,95 @@ width: 100% !important;
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1000px) {	
+  .content {
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    4;
+    -moz-column-gap:      0px;
+    column-count:         4;
+    column-gap:           0px;  
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {	
+  .content {
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    3;
+    -moz-column-gap:      0px;
+    column-count:         3;
+    column-gap:           0px;  
+    margin: 0 auto;
+  }
+  .button {
+    margin: 10px 10px;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+  .btn-title {
+  font-size: 14px;
+}
+
+  .search-input {
+    width: 70%;
+    font-size: 17px;
+    padding: 7px;
+  }
+
+  .search-button {
+    font-size: 17px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 500px) {	
+  .content {
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    2;
+    -moz-column-gap:      0px;
+    column-count:         2;
+    column-gap:           0px;  
+    margin: 0 auto;
+  }
+  .buttons {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .button {
+    margin: 5px;
+  }
+
+    .search-input {
+    width: 60%;
+    font-size: 16px;
+    padding: 7px;
+  }
+
+  .search-button {
+    font-size: 16px;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 340px) {	
+  .content {
+    line-height: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    1;
+    -moz-column-gap:      0px;
+    column-count:         1;
+    column-gap:           0px;  
+    margin: 0 auto;
+  }
 }
