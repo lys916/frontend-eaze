@@ -160,7 +160,7 @@ class App extends Component {
     this.setState({ loading: true });
     axios.get(`http://api.giphy.com/v1/gifs/search?q=${this.state.searchTerm}&api_key=${API_KEY}`).then(res => {
       console.log('got gifs', res.data.data);
-      this.setState({ gifs: res.data.data, displaying: 'search' }, () => {
+      this.setState({ gifs: res.data.data, displaying: 'search', searchTerm: '' }, () => {
         // apply opacity animation
         setTimeout(() => {
           this.setState({
