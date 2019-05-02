@@ -13,7 +13,7 @@ library.add(faHeartRegular, faHeartSolid)
 const API_KEY = 'YvUVytkIs6KeM6KGtQ0bXfGBvsdrDsKZ';
 
 class App extends Component {
-  // decided not to use redux and have app.js manage the state since there is not much data moving around.
+  // decided not to use redux and have app.js component manage the state since there is not much data moving around.
   state = {
     loading: true,
     gifs: [],
