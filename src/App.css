@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background: #00a6e0;
+}
+
+.search-input {
+  width: 80%;
+  max-width: 800px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 5px;
+}
+
+.search-button {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background: rgb(124, 124, 124);
+}
+
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: white;
+  margin: 10px 15px;
+  padding: 8px 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.button-active {
+  background: white;
+  color:  #00a6e0;
+}
+
+.btn-title {
+  color: white;
+}
+
+.sort-title {
+  margin-left: 20px;
+}
+
+/* Content */
+.content {
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+img {
+width: 100% !important;
+  height: auto !important;
+}
+
+.gif {
+  position: relative;
+  padding: 3px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+/* create opacity animation when switch between trending and favorites */
+.show-gif {
+  opacity:1;
+  transition: opacity 1s, transform 1s;
+}
+.icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(255, 23, 62);
+  font-size: 22px;
+}
+
+/* Gif Detail */
+.detail {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
