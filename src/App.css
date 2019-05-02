@@ -65,7 +65,6 @@
   column-gap:           0px;  
   margin: 0 auto;
   max-width: 1200px;
-
 }
 
 img {
@@ -90,6 +89,12 @@ width: 100% !important;
   right: 10px;
   color: rgb(255, 23, 62);
   font-size: 22px;
+}
+
+.no-fav {
+  font-size: 17px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Gif Detail */
